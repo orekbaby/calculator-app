@@ -1,0 +1,199 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: hsl(222, 26%, 31%);
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.calc{
+    color: white;
+    text-align: left;
+}
+
+.calculator {
+    background-color: hsl(224, 36%, 15%);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+}
+
+#display {
+    width: 100%;
+     background-color: hsl(224, 36%, 15%);
+     color: white;
+    margin-bottom: 10px;
+    
+    padding: 10px;
+    font-size: 24px;
+    text-align: right;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+button {
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.operator {
+    background-color: #e0e0e0;
+}
+
+.number {
+    background-color: #f0f0f0;
+}
+
+.btn-color {
+    background-color: hsl(225, 21%, 49%);
+      box-shadow:  hsl(224, 28%, 35%);
+    color: white;
+}
+
+#clear {
+    background-color:  hsl(6, 63%, 50%);
+    color: white;
+}
+
+
+.theme-toggle {
+    position: absolute;
+    font-size: 14px;
+    top: 150px;
+    right: 530px;
+    padding: 5px 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.theme-indicators {
+    display: flex;
+    margin: 5px;
+    justify-content: center;
+    margin-top: 10px;
+    position: relative;
+    bottom: 75px;
+    left: 128px;
+}
+
+.theme-indicator {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+.theme-indicator.active {
+    background-color: black;
+    color: white;
+}
+
+
+/* Light Theme */
+ .light-theme body {
+    background-color:  hsl(0, 0%, 93%);
+    color: black;
+}
+.light-theme .calc{
+    color: hsl(224, 36%, 15%);
+}
+
+.light-theme .calculator {
+    background-color: hsl(45, 7%, 89%);
+    color: black;
+}
+.light-theme #display {
+    background-color:hsl(0, 0%, 93%);
+    color: black;
+}
+.light-theme button{
+    background-color:   hsl(0, 0%, 93%);
+    }
+.light-theme .theme-toggle{
+    background-color: hsl(224, 36%, 15%);
+    color: white;
+}
+
+.light-theme .btn-color {
+    background-color:hsl(185, 42%, 37%);
+    color: white;
+}
+.light-theme #clear{
+    background-color: hsl(25, 98%, 40%);
+    color: white;
+}
+
+
+
+/* blue Theme */
+ body .blue-theme {
+    background-color:  hsl(222, 26%, 31%);
+    color: white;
+}
+
+.blue-theme .calculator {
+    background-color: hsl(224, 36%, 15%);
+    color: white;
+}
+
+.blue-theme #display {
+    background-color: hsl(224, 36%, 15%);
+    color: white;
+}
+.blue-theme .btn-color {
+    background-color:hsl(225, 21%, 49%);
+     box-shadow:  hsl(224, 28%, 35%);
+    color: white;
+}
+.blue-theme #clear{
+    background-color:  hsl(6, 63%, 50%);
+    color: white;
+}
+
+
+
+/* purple Theme */
+ body .purple-theme {
+    background-color: hsl(268, 75%, 9%);
+    color:hsl(52, 100%, 62%);
+}
+
+.purple-theme .calculator {
+    background-color: hsl(268, 71%, 12%);
+    color: hsl(52, 100%, 62%);
+}
+.purple-theme #display {
+    background-color: hsl(268, 71%, 12%);
+   color:  hsl(52, 100%, 62%);
+}
+.purple-theme button{
+    background-color:hsl(268, 47%, 21%);
+    box-shadow:  hsl(285, 91%, 52%);
+    color: hsl(52, 100%, 62%);
+}
+.purple-theme .btn-color {
+    background-color: hsl(281, 89%, 26%);
+   box-shadow: hsl(285, 91%, 52%);
+color:  hsl(52, 100%, 62%);
+}
+.purple-theme #clear{
+    background-color:   hsl(176, 100%, 44%);
+    box-shadow: hsl(177, 92%, 70%);
+ color: hsl(198, 20%, 13%); 
+}
